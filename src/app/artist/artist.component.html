@@ -1,0 +1,8 @@
+<p>{{ artist?.name }}</p>
+<img class="artistImage" src="{{ artist?.imageUrl }}"/>
+<ul>
+  <li *ngFor="let socialMedia of artist?.socialsMedia">
+    <img class="socialMediaIcon" src="{{ socialMedia.socialMedia.iconUrl }}">
+    <a href="{{ socialMedia.url }}" target="_blank">{{ socialMedia.nameId }}</a>
+  </li>
+</ul>

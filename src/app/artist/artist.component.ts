@@ -14,6 +14,7 @@ export class ArtistComponent implements OnInit {
 
   constructor(private http: HttpClient, private route: ActivatedRoute) {
   }
+
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       let artistId: number = parseInt(params.get('id')!);
@@ -21,7 +22,7 @@ export class ArtistComponent implements OnInit {
     });
   }
 
-  callApiTest(artistId: number){
+  callApiTest(artistId: number): void{
     this.http.get(`http://localhost:8080/api/v1/artists/${artistId}`).subscribe(data => {
       this.data = data;
       console.log(this.data);

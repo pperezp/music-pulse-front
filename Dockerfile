@@ -1,0 +1,8 @@
+FROM node
+
+EXPOSE 4200
+WORKDIR /app
+COPY . .
+RUN npm install
+RUN npm run build
+ENTRYPOINT ["npm", "start"]

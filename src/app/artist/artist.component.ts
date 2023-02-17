@@ -23,7 +23,7 @@ export class ArtistComponent implements OnInit {
   }
 
   callApiTest(artistId: number): void{
-    this.http.get(`http://localhost:8080/api/v1/artists/${artistId}`).subscribe(data => {
+    this.http.get(`http://172.17.0.4:8080/api/v1/artists/${artistId}`).subscribe(data => {
       this.data = data;
       console.log(this.data);
       this.artist = this.data.artist;

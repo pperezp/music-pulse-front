@@ -7,12 +7,16 @@ import { TestComponent } from './test/test.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ArtistComponent } from './artist/artist.component';
+import { LeftMenuComponent } from './left-menu/left-menu.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    ArtistComponent
+    ArtistComponent,
+    LeftMenuComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,

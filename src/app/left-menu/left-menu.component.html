@@ -1,0 +1,24 @@
+<div class="artistMenuLeft">
+  <div>
+    <div class="artistImageDiv">
+      <img class="artistImage" src="{{ artist?.imageUrl }}"/>
+    </div>
+    <div class="artistName">
+      <p>{{ artist?.name }}</p>
+    </div>
+    <div>
+      <!-- contact -->
+    </div>
+  </div>
+
+  <div>
+    <ul>
+      <li *ngFor="let socialMedia of artist?.socialsMedia" class="socialMediaItem">
+        <img class="socialMediaIcon" src="{{ socialMedia.socialMedia.iconUrl }}">
+        <a class="socialMediaLink" href="{{ socialMedia.url }}" target="_blank">{{ socialMedia.nameId }}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+

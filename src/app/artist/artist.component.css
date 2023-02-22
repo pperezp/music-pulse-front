@@ -15,7 +15,7 @@
 .artistMenuLeft {
   padding: 20px;
   width: 250px;
-  /*background-color: aqua;*/
+  background-color: #d6fff2;
   font-family: sans-serif;
 }
 
@@ -40,3 +40,9 @@ a:link {
 a:visited {
   text-decoration: none;
 }
+
+.socialMediaItem {
+  display: flex;
+  align-items: center;
+}
+
